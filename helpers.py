@@ -183,7 +183,7 @@ workflow = StateGraph(GraphState)
 workflow.add_node("wiki_search", wiki_search)  # web search
 workflow.add_node("retrieve", retrieve)  # retrieve
 
-# Build graph
+# Build graphs
 workflow.add_conditional_edges(
     START,
     route_question,
